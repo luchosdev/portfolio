@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -11,11 +16,48 @@ body {
     color: white;
 }
 
-nav {
+.nav {
+    width: 100%;
+    height: 40px;
     background-color: #525E65;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    position: fixed;
+}
+
+.dark-mode {
+    width: 30px;
+    height: 30px;
+    justify-content: left;
+}
+
+.menu {
     display: flex;
 }
 
-nav ul li {
-    flex: auto;
+.menu li {
+    list-style: none;
+    margin: 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    transition: all 0.5s ease;
+    justify-content: center;
+}
+
+.menu li a:hover {
+    padding: 5px 10px;
+    background: #fff;
+    color: #000;
+    border-radius: 15px;
+}
+
+.main-logo {
+    width: 100px;
+    margin-top: 80px;
 }
