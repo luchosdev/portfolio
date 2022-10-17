@@ -59,5 +59,14 @@ body {
 
 .main-logo {
     width: 100px;
-    margin-top: 80px;
+}
+
+.main-profile, .about-me, .projects-container, .contact-me {
+    padding-top: 6rem;
+}
+
+.logo-skills {
+    display: flex;
+    width: 70px;
+    height: 70px;
 }
