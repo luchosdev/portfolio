@@ -72,6 +72,9 @@ body {
     cursor: pointer;
 }
 
+.menu-btn:hover {
+    
+}
 .indicator {
     display: none;
 }
@@ -92,6 +95,12 @@ body {
 
 .main-profile, .about-me, .projects-container, .contact-me {
     padding-top: 6rem;
+}
+
+.logos, .more-about a img{
+    display: flex;
+    width: 70px;
+    height: 70px;
 }
 
 .logo-skills {
