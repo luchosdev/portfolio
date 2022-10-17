@@ -63,6 +63,9 @@ body {
 
 .menu-btn {
     display: block;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .indicator {
