@@ -7,4 +7,15 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #141414;
+    color: white;
+}
+
+nav {
+    background-color: #525E65;
+    display: flex;
+}
+
+nav ul li {
+    flex: auto;
 }
