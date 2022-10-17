@@ -41,6 +41,10 @@ body {
     transform: translateX(-100%);
 }
 
+.menu.active {
+    transform: translateX(0);
+}
+
 .menu li {
     list-style: none;
     margin: 10px;
@@ -70,6 +74,16 @@ body {
 
 .indicator {
     display: none;
+}
+
+.scroll {
+    height: 100px;
+}
+
+.dark-mode {
+    width: 30px;
+    height: 30px;
+    justify-content: left;
 }
 
 .main-logo {
