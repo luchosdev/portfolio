@@ -16,3 +16,9 @@
 .menu-btn {
     display: none;
 }
+
+.dark-mode {
+    width: 30px;
+    height: 30px;
+    justify-content: left;
+}

@@ -72,9 +72,6 @@ body {
     cursor: pointer;
 }
 
-.menu-btn:hover {
-    
-}
 .indicator {
     display: none;
 }
@@ -84,9 +81,7 @@ body {
 }
 
 .dark-mode {
-    width: 30px;
-    height: 30px;
-    justify-content: left;
+    display: none;
 }
 
 .main-logo {
