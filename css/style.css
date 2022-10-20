@@ -104,6 +104,13 @@ body {
     height: 70px;
 }
 
-.project__banner img {
-    width: 30rem;
+.project {
+    display: grid;
+    margin: 30px;
+}
+
+.project__banner{
+    align-items: center;
+    justify-content: center;
+    width: 500px;
 }
