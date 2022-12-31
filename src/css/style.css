@@ -72,6 +72,10 @@ body {
     cursor: pointer;
 }
 
+.menu-icon {
+    width: 35px;
+}
+
 .indicator {
     display: none;
 }
@@ -84,12 +88,28 @@ body {
     display: none;
 }
 
-.main-logo {
-    width: 100px;
+.main-profile {
+    display: grid;
+    margin: 15px;
+    align-items: center;
 }
+
+.main-logo {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 .main-profile, .about-me, .projects-container, .contact-me {
     padding-top: 6rem;
+}
+
+.social-media-container {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
 }
 
 .logos, .more-about a img{
