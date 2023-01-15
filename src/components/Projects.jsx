@@ -1,4 +1,7 @@
 import Admin_ECommerce from '../assets/img/works/admin-ecommerce-desktop-mobile.png';
+import YardSales from '../assets/img/works/Ecommerce-yard-sales-desktop-mobile.png';
+import GoogleClone from '../assets/img/works/google-clone-desktop-mobile.png';
+import LandingPage from '../assets/img/works/sign-in-panding-page-desktop-mobile.png';
 import { BsGithub } from 'react-icons/bs';
 import { IoRocketOutline } from 'react-icons/io5';
 
@@ -9,7 +12,7 @@ const Projects = () => {
 
             <div id="project-1">
                 <picture className="flex justify-center">
-                    <img className="w-80" src={Admin_ECommerce} alt="" />
+                    <img className="w-80" src={Admin_ECommerce} alt="admin-ecommerce" />
                 </picture>
                 <h3 className="text-orange_1 text-3xl font-bold font-poppins mb-2">Admin E-commerce</h3>
                 <p className="text-xl font-poppins mb-5">
@@ -40,74 +43,101 @@ const Projects = () => {
                 </div>
             </div>
 
-            <div class="project" id="project-2">
-                <picture class="project__banner">
-                    <img src="./assets/img/works/Ecommerce-yard-sales-desktop-mobile.png" alt="" />
+            <div id="project-2">
+                <picture className="flex justify-center">
+                    <img className="w-80" src={YardSales} alt="yardsales" />
                 </picture>
-                <h3>Yard Sales E-commerce</h3>
-                <p>
+                <h3 className="text-orange_1 text-3xl font-bold font-poppins mb-2">Yard Sales E-commerce</h3>
+                <p className="text-xl font-poppins mb-5">
                     <b>Technologies:</b> CSS, JavaScript, Webpack, React JS, Next JS, ESLint, Git
                 </p>
-                <article>
+                <article className="text-xl font-poppins text-justify mx-6">
                     Ecommerce made with React JS, minified with Webpack and transpiled with Babel for browser
                     compatibility, then I went a bit further and migrated it to Next Js. In this project, I
                     learned how state and context work to manage my components and send information through
                     them. Products from
-                    <strong>
+                    <strong className="mx-2">
                         <a class="link-api" href="https://api.escuelajs.co/api/v1/products">
                             this API
                         </a>
                     </strong>
                     were requested.
                 </article>
-                <a href="https://github.com/LuisSequeraDev/yard-sales-netx.js">
-                    <img src="./icons/github-small.png" alt="repository" />
-                </a>
-                <a href="https://yard-sales-netx-js.vercel.app/">
-                    <img src="./icons/deploy-small.png" alt="deploy" />
-                </a>
+                <div className="flex justify-center gap-x-20 mt-3">
+                    <a
+                        className="flex flex-col items-center"
+                        href="https://github.com/LuisSequeraDev/yard-sales-netx.js"
+                    >
+                        <BsGithub className="text-5xl" alt="repository" />
+                        <p>Repository</p>
+                    </a>
+                    <a className="flex flex-col items-center" href="https://yard-sales-netx-js.vercel.app/">
+                        <IoRocketOutline className="text-5xl text-center" alt="deploy" />
+                        <p>Open Project</p>
+                    </a>
+                </div>
             </div>
 
-            <div class="project" id="project-3">
-                <picture class="project__banner">
-                    <img src="./assets/img/works/google-clone-desktop-mobile.png" alt="" />
+            <div id="project-3">
+                <picture className="flex justify-center">
+                    <img className="w-80" src={GoogleClone} alt="" />
                 </picture>
-                <h3>Google Clone</h3>
-                <p>
+                <h3 className="text-orange_1 text-3xl font-bold font-poppins mb-2">Google Clone</h3>
+                <p className="text-xl font-poppins mb-5">
                     <b>Technologies:</b> HTML y CSS
                 </p>
-                <article>
+                <article className="text-xl font-poppins text-justify mx-6">
                     This project was created with the intention of practicing the basic structure of this
                     popular website, using only HTML and CSS.
                 </article>
-                <a href="https://github.com/LuisSequeraDev/clone-google">
-                    <img src="./icons/github-small.png" alt="repository" />
-                </a>
-                <a href="https://luissequeradev.github.io/clone-google/">
-                    <img src="./icons/deploy-small.png" alt="deploy" />
-                </a>
+                <div className="flex justify-center gap-x-20 mt-3">
+                    <a
+                        className="flex flex-col items-center"
+                        href="https://github.com/LuisSequeraDev/clone-google"
+                    >
+                        <BsGithub className="text-5xl" alt="repository" />
+                        <p>Repository</p>
+                    </a>
+                    <a
+                        className="flex flex-col items-center"
+                        href="https://luissequeradev.github.io/clone-google/"
+                    >
+                        <IoRocketOutline className="text-5xl text-center" alt="deploy" />
+                        <p>Open Project</p>
+                    </a>
+                </div>
             </div>
 
-            <div class="project" id="project-4">
-                <picture class="project__banner">
-                    <img src="./assets/img/works/sign-in-panding-page-desktop-mobile.png" alt="" />
+            <div id="project-4">
+                <picture className="flex justify-center">
+                    <img className="w-80" src={LandingPage} alt="" />
                 </picture>
-                <h3>Sign in Landing Page</h3>
-                <p>
+                <h3 className="text-orange_1 text-3xl font-bold font-poppins mb-2">Sign in Landing Page</h3>
+                <p className="text-xl font-poppins mb-5">
                     <b>Technologies:</b> Html, CSS and JavaScript.
                 </p>
-                <article>
+                <article className="text-xl font-poppins text-justify mx-6">
                     This project was created as a "Frontend Mentor" challenge, where I created from scratch
                     using the resources provided on the site, how it should be seen and the respective
                     validations made if the email and password are correct according to the established
                     criteria.
                 </article>
-                <a href="https://github.com/LuisSequeraDev/validate-forms-html-css-js">
-                    <img src="./icons/github-small.png" alt="repository" />
-                </a>
-                <a href="https://luissequeradev.github.io/validate-forms-html-css-js/">
-                    <img src="./icons/deploy-small.png" alt="deploy" />
-                </a>
+                <div className="flex justify-center gap-x-20 mt-3">
+                    <a
+                        className="flex flex-col items-center"
+                        href="https://github.com/LuisSequeraDev/validate-forms-html-css-js"
+                    >
+                        <BsGithub className="text-5xl" alt="repository" />
+                        <p>Repository</p>
+                    </a>
+                    <a
+                        className="flex flex-col items-center"
+                        href="https://luissequeradev.github.io/validate-forms-html-css-js/"
+                    >
+                        <BsGithub className="text-5xl" alt="repository" />
+                        <p>Repository</p>
+                    </a>
+                </div>
             </div>
         </section>
     );
