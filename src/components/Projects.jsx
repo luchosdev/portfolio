@@ -57,9 +57,7 @@ const Projects = () => {
                     learned how state and context work to manage my components and send information through
                     them. Products from
                     <strong className="mx-2">
-                        <a class="link-api" href="https://api.escuelajs.co/api/v1/products">
-                            this API
-                        </a>
+                        <a href="https://api.escuelajs.co/api/v1/products">this API</a>
                     </strong>
                     were requested.
                 </article>

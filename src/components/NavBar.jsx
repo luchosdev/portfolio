@@ -108,9 +108,9 @@ const NavBar = () => {
                         <HiMenu className="text-3xl cursor-pointer mr-2" onClick={() => setActive(!active)} />
                     )}
                 </div>
-                {/* //* CUANDO EL USUARIO DA CLICK FUERA DEL MENU, ESTE SE CIERRA  */}
             </nav>
-            <div className="absolute top-0 left-0 right-0 bottom-0" onClick={() => setActive(false)}></div>
+            {/* //* CUANDO EL USUARIO DA CLICK FUERA DEL MENU, ESTE SE CIERRA  */}
+            {/* <div className="absolute top-0 left-0 right-0 bottom-0" onClick={() => setActive(false)}></div> */}{' '}
         </div>
     );
 };
