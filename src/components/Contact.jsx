@@ -1,94 +1,59 @@
+import Button from './layouts/Button';
+import InputText from './layouts/InputText';
+import TextArea from './layouts/TextArea';
+import Swal from 'sweetalert2';
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
+
 const Contact = () => {
+    const form = useRef();
+
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer);
+            toast.addEventListener('mouseleave', Swal.resumeTimer);
+        },
+    });
+
+    const sendEmail = (e) => {
+        console.log('It works!');
+        e.preventDefault();
+
+        emailjs.sendForm('service_b4osqgx', 'template_gpgd708', form.current, 'm-DaCE_jupVlbAhfw');
+
+        e.target.reset();
+
+        Toast.fire({
+            icon: 'success',
+            title: 'Your message was sent.',
+        });
+    };
+
     return (
-        <section class="contact-me" id="contact-me">
-            <div class="form-container">
-                <h2 class="title">Contact me</h2>
-                <p class="text">
+        <section className="mx-3 mt-5">
+            <div>
+                <h2 className="font-poppins font-bold text-2xl">Contact me</h2>
+                <p className="font-poppins mt-2 mx-3">
                     If you wan't to hire me, work with me or you just got some questions
-                    <strong>write me!</strong>
+                    <strong className="ml-2">write me!</strong>
                 </p>
 
-                <form id="contact-form" method="POST" class="contact">
-                    <div class="item name">
-                        <label for="name" class="item__title">
-                            Name
-                        </label>
-                        <input
-                            type="text"
-                            name="name"
-                            id="name"
-                            class="item__input"
-                            autocomplete="name"
-                            placeholder="Luis O. Sequera C."
-                            required
-                        />
-                    </div>
-
-                    <div class="item email">
-                        <label for="email" class="item__title">
-                            Email
-                        </label>
-                        <input
-                            type="email"
-                            name="email"
-                            id="email"
-                            class="item__input"
-                            autocomplete="email"
-                            placeholder="example@mail.com"
-                            required
-                        />
-                    </div>
-
-                    <div class="item subject">
-                        <label for="subject" class="item__title">
-                            Subject
-                        </label>
-                        <input
-                            type="text"
-                            name="subject"
-                            id="subject"
-                            class="item__input"
-                            placeholder="Job offer"
-                            required
-                        />
-                    </div>
-
-                    <div class="item message">
-                        <label for="message" class="item__title">
-                            Message
-                        </label>
-                        <textarea
-                            name="message"
-                            id="message"
-                            class="item__input"
-                            placeholder="Message..."
-                            required
-                        ></textarea>
-                    </div>
-
-                    <input type="submit" id="submit" class="primary-button" value="Send" />
+                <form
+                    onSubmit={sendEmail}
+                    ref={form}
+                    className="flex flex-col mt-6 p-6 rounded-md shadow-md w-full"
+                    style={{ background: '#fff3' }}
+                >
+                    <InputText placeholder="Your Name *" name="name" type="text" />
+                    <InputText placeholder="Email *" name="email" type="email" />
+                    <TextArea placeholder="Message" Style="h-40" name="message" />
+                    <Button label="Send" Style="text-center" type="submit" />
                 </form>
-
-                <dialog id="form-success" class="modal succesful">
-                    <div class="modal__content">
-                        <i class="icon-check modal__icon"></i>
-                        <h2 class="modal__title">Email sent</h2>
-                    </div>
-                </dialog>
-
-                <dialog id="form-error" class="modal error">
-                    <div class="modal__content">
-                        <i class="icon-cross modal__icon"></i>
-                        <h2 class="modal__title">Something went wrong!</h2>
-                    </div>
-                </dialog>
-
-                <dialog id="form-incomplete" class="modal error">
-                    <div class="modal__content">
-                        <i class="icon-cross modal__icon"></i>
-                        <h2 class="modal__title">You must fill all the gaps</h2>
-                    </div>
-                </dialog>
             </div>
         </section>
     );

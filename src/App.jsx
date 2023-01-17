@@ -9,6 +9,7 @@ import { Contact } from './components/Contact';
 import { Projects } from './components/Projects';
 import { Skills } from './components/Skills';
 import { Footer } from './components/Footer';
+import ArrowUp from '../src/assets/icons/up-chevron-large.png';
 
 //? ESTILOS
 import './App.css';
@@ -23,7 +24,10 @@ function App() {
             <Projects />
             <Contact />
             <Footer />
-            <div>Footer</div>
+            {/*//* Flecha para subir al home */}
+            <a href="#home">
+                <img className="w-8 fixed bottom-3 right-3 opacity-40 hover:opacity-80" src={ArrowUp} />
+            </a>
         </div>
     );
 }
