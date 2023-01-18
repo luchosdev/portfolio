@@ -3,7 +3,7 @@ import Laptop2 from '../assets/icons/laptop-large.jpg';
 
 const About = () => {
     return (
-        <section id="about" className="py-5">
+        <section id="about" className="py-20">
             <img className="lg:hidden w-96 mx-auto opacity-80" src={Laptop} alt="laptop" />
             <img className="hidden lg:block w-96 mx-auto opacity-80" src={Laptop2} alt="laptop" />
             <h1 className="text-blue_1 text-3xl font-extrabold font-poppins my-3">WHO AM I?</h1>

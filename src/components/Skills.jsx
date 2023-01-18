@@ -6,14 +6,16 @@ import Angular from '../assets/icons/angular-icon.svg';
 import Tailwind from '../assets/icons/tailwind-css-large.png';
 import Next from '../assets/icons/next-large.png';
 import Webpack from '../assets/icons/webpack-large.svg';
+import ViteLogo from '../assets/icons/vitejs.svg';
 import Eslint from '../assets/icons/eslint.png';
+import Prettier from '../assets/icons/prettier.svg';
 import Git from '../assets/icons/git.svg';
 import GitHub from '../assets/icons/github-large.png';
 import GitLab from '../assets/icons/gitlab.svg';
 
 const Skills = () => {
     return (
-        <section id="skills" className="mx-3">
+        <section id="skills" className="mx-3 py-10">
             <h1 className="pt-12 mb-3 text-blue_1 text-3xl font-extrabold font-poppins">Skills</h1>
             <ul className="grid grid-cols-3 gap-2 ">
                 <li className="flex h-24 flex-col items-center justify-center bg-white rounded-lg p-2">
@@ -25,7 +27,7 @@ const Skills = () => {
                     <img className="w-14" src={Css} alt="css3-logo" />
                 </li>
                 <li className="flex h-24 flex-col items-center justify-center bg-white rounded-lg p-2">
-                    <h6 className="text-black font-poppins font-bold">JavaScript</h6>
+                    <h6 className="text-black -mt-1 font-poppins font-bold">JavaScript</h6>
                     <img className="w-14" src={JavaScript} alt="javascript-logo" />
                 </li>
                 <li className="flex h-24 flex-col items-center justify-center bg-white rounded-lg p-2">
@@ -37,8 +39,8 @@ const Skills = () => {
                     <img className="w-14" src={Angular} alt="angular-logo" />
                 </li>
                 <li className="flex h-24 flex-col items-center justify-center bg-white rounded-lg p-2">
-                    <h6 className="pt-2 text-black font-poppins font-bold">Tailwind CSS</h6>
-                    <img className="w-16" src={Tailwind} alt="tailwind-logo" />
+                    <h6 className="pt-1 text-sm text-black font-poppins font-bold">TailwindCSS</h6>
+                    <img className="w-16 -mt-1" src={Tailwind} alt="tailwind-logo" />
                 </li>
                 <li className="flex h-24 flex-col items-center justify-center bg-white rounded-lg p-2">
                     <h6 className="text-black font-poppins font-bold">Next JS</h6>
@@ -49,20 +51,28 @@ const Skills = () => {
                     <img className="w-14" src={Webpack} alt="webpack-logo" />
                 </li>
                 <li className="flex h-24 flex-col items-center justify-center bg-white rounded-lg p-2">
+                    <h6 className="text-black font-poppins font-bold">Vite</h6>
+                    <img className="w-14 pb-1" src={ViteLogo} alt="webpack-logo" />
+                </li>
+                <li className="flex h-24 flex-col items-center justify-center bg-white rounded-lg p-2">
                     <h6 className="text-black font-poppins font-bold">ESLint</h6>
-                    <img className="w-14 my-1" src={Eslint} alt="eslint-logo" />
+                    <img className="w-14 pb-1" src={Eslint} alt="eslint-logo" />
+                </li>
+                <li className="flex h-24 flex-col items-center justify-center bg-white rounded-lg p-2">
+                    <h6 className="text-black font-poppins font-bold">Prettier</h6>
+                    <img className="w-14 pb-2" src={Prettier} alt="eslint-logo" />
                 </li>
                 <li className="flex h-24 flex-col items-center justify-center bg-white rounded-lg px-2 py-4">
                     <h6 className="text-black font-poppins font-bold">Git</h6>
                     <img className="w-14 my-1" src={Git} alt="git-logo" />
                 </li>
-                <li className="flex h-24 flex-col items-center justify-center bg-white rounded-lg p-2">
-                    <h6 className="text-black font-poppins font-bold">GitHub</h6>
+                <li className="flex h-24 flex-col items-center justify-center bg-white rounded-lg">
+                    <h6 className="text-black -mt-1 mb-1 font-poppins font-bold">GitHub</h6>
                     <img className="w-14" src={GitHub} alt="github-logo" />
                 </li>
                 <li className="flex h-24 flex-col items-center justify-center bg-white rounded-lg p-2">
                     <h6 className="text-black font-poppins font-bold">GitLab</h6>
-                    <img className="w-14 mt-1" src={GitLab} alt="gitlab-logo" />
+                    <img className="w-16 mt-1" src={GitLab} alt="gitlab-logo" />
                 </li>
             </ul>
         </section>

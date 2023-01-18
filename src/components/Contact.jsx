@@ -35,7 +35,7 @@ const Contact = () => {
     };
 
     return (
-        <section id="contact" className="mx-3 mt-5">
+        <section id="contact" className="mx-3 mt-28 mb-20">
             <div>
                 <h2 className="font-poppins font-bold text-2xl">Contact me</h2>
                 <p className="font-poppins mt-2 mx-3">

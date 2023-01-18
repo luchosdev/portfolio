@@ -8,7 +8,7 @@ import LinkedInLogo from '../assets/icons/linkedin-logo.svg';
 
 const Home = () => {
     return (
-        <section id="home" className="pt-20 mb-16">
+        <section id="home" className="pt-28 mb-16">
             <img src={Profile} className="flex mx-auto w-48 rounded-full" alt="profile-photo" />
             <h1 className="text-blue_1 text-3xl font-semibold font-poppins mt-2">Social Media</h1>
             {/* //* Iconos */}
@@ -38,10 +38,10 @@ const Home = () => {
                     Passionate about learning.
                 </p>
             </div>
-            <div className="hidden">
-                <p>More about me...</p>
-                <a href="">
-                    <img src={ArrowDown} alt="arrow-down" />
+            <div className="flex flex-col items-center mt-5">
+                <p className="text-orange_1">More about me...</p>
+                <a href="#about">
+                    <img className="w-20 arrow_float mt-5" src={ArrowDown} alt="arrow-down" />
                 </a>
             </div>
         </section>

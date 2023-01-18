@@ -100,12 +100,9 @@ const NavBar = () => {
                 {/* //* BOTON MENU */}
                 <div className="lg:hidden">
                     {active ? (
-                        <HiMenuAlt3
-                            className="text-3xl cursor-pointer mr-2"
-                            onClick={() => setActive(!active)}
-                        />
+                        <HiMenuAlt3 className="text-3xl cursor-pointer" onClick={() => setActive(!active)} />
                     ) : (
-                        <HiMenu className="text-3xl cursor-pointer mr-2" onClick={() => setActive(!active)} />
+                        <HiMenu className="text-3xl cursor-pointer" onClick={() => setActive(!active)} />
                     )}
                 </div>
             </nav>
