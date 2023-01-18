@@ -15,7 +15,7 @@ import GitLab from '../assets/icons/gitlab.svg';
 
 const Skills = () => {
     return (
-        <section id="skills" className="mx-3 py-10">
+        <section id="skills" className="mx-3 pt-10 pb-16">
             <h1 className="pt-12 mb-3 text-blue_1 text-3xl font-extrabold font-poppins">Skills</h1>
             <ul className="grid grid-cols-3 gap-2 ">
                 <li className="flex h-24 flex-col items-center justify-center bg-white rounded-lg p-2">

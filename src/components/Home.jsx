@@ -39,7 +39,7 @@ const Home = () => {
                 </p>
             </div>
             <div className="flex flex-col items-center mt-5">
-                <p className="text-orange_1">More about me...</p>
+                <p className="text-xl text-orange_1">More about me...</p>
                 <a href="#about">
                     <img className="w-20 arrow_float mt-5" src={ArrowDown} alt="arrow-down" />
                 </a>
