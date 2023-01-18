@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import React from 'react';
 import CV from '../assets/others/cvLuisSequera.pdf';
 
@@ -9,7 +9,7 @@ import { BsFillMoonStarsFill, BsFillSunFill } from 'react-icons/bs';
 const NavBar = () => {
     const [active, setActive] = useState(false);
     const [loader, setLoader] = useState(false);
-    const [closeModal, setCloseModal] = useState('false');
+    // const [closeModal, setCloseModal] = useState('false');
 
     const Loader = () => {
         setLoader(true);
@@ -21,7 +21,7 @@ const NavBar = () => {
     return (
         <div>
             <nav
-                className={`flex p-2 lg:justify-around lg:shadow-none justify-between items-center fixed hover:bg-white hover:text-black w-screen lg:bg-transparent ${
+                className={`flex py-2 px-4 lg:justify-around lg:shadow-none justify-between items-center fixed hover:bg-white hover:text-black w-screen lg:bg-transparent ${
                     active && 'bg-white'
                 } ${active && 'text-black'} transition-all duration-500`}
                 style={{ backdropFilter: 'blur(1px)', zIndex: '999' }}
