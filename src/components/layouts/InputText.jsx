@@ -3,7 +3,7 @@ const InputText = ({ placeholder, onChange, Style, name, type }) => {
         <input
             required
             type={type}
-            className={`rounded-sm p-2 outline-none my-1 text-black ${Style}`}
+            className={`rounded-sm p-2 outline-none my-1 md:text-xl lg:text-2xl text-black ${Style}`}
             name={name}
             placeholder={placeholder}
             onChange={onChange}

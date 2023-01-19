@@ -1,4 +1,5 @@
 //* LIBRERIAS
+import { useState, useEffect, useRef } from 'react';
 // import { Routes, Route } from 'react-router-dom';
 
 //* MAIN *//
@@ -15,9 +16,25 @@ import ArrowUp from '../src/assets/icons/up-chevron-large.png';
 import './App.css';
 
 function App() {
+    const [active, setActive] = useState(false);
+
+    useEffect(() => {
+        const handleClick = (event) => {
+            if (!navbarRef.current.contains(event.target)) {
+                setActive(false);
+            }
+        };
+        document.addEventListener('click', handleClick);
+        return () => {
+            document.removeEventListener('click', handleClick);
+        };
+    }, [active]);
+
+    const navbarRef = useRef(null);
+
     return (
         <div className="App">
-            <NavBar />
+            <NavBar active={active} setActive={setActive} navbarRef={navbarRef} />
             <Home />
             <About />
             <Skills />
