@@ -12,6 +12,7 @@ const Projects = () => {
                 Projects
             </h1>
             <div className="sm800:grid sm800:grid-cols-2">
+                {/* Admin E-Commerce */}
                 <div
                     className="flex flex-col justify-between bg-white rounded-md border mx-4 mt-4 pb-4 px-4"
                     id="project-1"
@@ -50,6 +51,7 @@ const Projects = () => {
                     </div>
                 </div>
 
+                {/* Yard Sales E-Commerce */}
                 <div
                     className="flex flex-col justify-between bg-white rounded-md border mx-4 mt-4 pb-4 px-4"
                     id="project-2"
@@ -91,6 +93,7 @@ const Projects = () => {
                     </div>
                 </div>
 
+                {/* Google Clone */}
                 <div
                     className="flex flex-col justify-between bg-white rounded-md border mx-4 mt-4 pb-4 px-4"
                     id="project-3"
@@ -114,16 +117,10 @@ const Projects = () => {
                             <BsGithub className="fill-black text-5xl" alt="repository" />
                             <p className="text-black font-semibold">Repository</p>
                         </a>
-                        <a
-                            className="flex flex-col items-center"
-                            href="https://luissequeradev.github.io/clone-google/"
-                        >
-                            <IoIosRocket className="fill-black text-5xl text-center" alt="deploy" />
-                            <p className="text-black font-semibold">Open Project</p>
-                        </a>
                     </div>
                 </div>
 
+                {/* Sign in Landing Page */}
                 <div
                     className="flex flex-col justify-between bg-white rounded-md border mx-4 mt-4 pb-4 px-4"
                     id="project-4"
@@ -149,13 +146,6 @@ const Projects = () => {
                             href="https://github.com/LuisSequeraDev/validate-forms-html-css-js"
                         >
                             <BsGithub className="fill-black text-5xl" alt="repository" />
-                            <p className="text-black font-semibold">Repository</p>
-                        </a>
-                        <a
-                            className="flex flex-col items-center"
-                            href="https://luissequeradev.github.io/validate-forms-html-css-js/"
-                        >
-                            <IoIosRocket className="fill-black text-5xl" alt="repository" />
                             <p className="text-black font-semibold">Repository</p>
                         </a>
                     </div>
