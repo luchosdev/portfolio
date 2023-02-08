@@ -5,7 +5,8 @@ import { HiMenuAlt3, HiMenu } from 'react-icons/hi';
 import { BsFillMoonStarsFill, BsFillSunFill } from 'react-icons/bs';
 import CV from '../assets/others/cvLuisSequera.pdf';
 
-function NavBar({ active, setActive, navbarRef, changeDarkMode }) {
+// eslint-disable-next-line react/prop-types
+function NavBar({ active, setActive, navbarRef }) {
   const [loader, setLoader] = useState(false);
   const [icon, setIcon] = useState('menu');
   const setActiveAndIcon = () => {
@@ -32,7 +33,6 @@ function NavBar({ active, setActive, navbarRef, changeDarkMode }) {
         style={{ backdropFilter: 'blur(1px)', zIndex: '999' }}
       >
         {/* //* ICONOS DARK MODE */}
-        <button onClick={changeDarkMode}>click</button>
         <BsFillSunFill className="text-2xl opacity-0 md:my-1" alt="dark-mode" />
         <BsFillMoonStarsFill className="hidden" alt="dark-mode" />
 
@@ -98,7 +98,6 @@ function NavBar({ active, setActive, navbarRef, changeDarkMode }) {
             onClick={Loader}
             href={CV}
             className="cursor-pointer rounded-md bg-violet-600 px-3 py-1 text-lg text-white shadow-lg transition-all duration-300 hover:bg-violet-700 hover:shadow-none hover:shadow-gray-800 active:bg-violet-600"
-            // className="cursor-pointer text-white hover:shadow-none shadow-lg text-lg active:bg-violet-600 hover:bg-violet-700 hover:shadow-gray-800 transition-all duration-300 bg-violet-600 px-3 py-1 rounded-md"
             download
           >
             {loader ? 'Descargando...' : 'Download CV'}
@@ -107,6 +106,7 @@ function NavBar({ active, setActive, navbarRef, changeDarkMode }) {
 
         {/* //* BOTON MENU */}
         <button
+          type="button"
           className={`menu-btn lg:hidden ${active && 'close'}`}
           onClick={setActiveAndIcon}
         >
