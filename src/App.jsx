@@ -1,6 +1,5 @@
 //* LIBRERIAS
 import React, { useState, useEffect, useRef } from 'react';
-// import { Routes, Route } from 'react-router-dom';
 
 //* MAIN *//
 import NavBar from './components/NavBar';
@@ -25,6 +24,7 @@ function App() {
   /* //* Función que llama a la configuración */
   useEffect(() => {
     const handleClick = (event) => {
+      // eslint-disable-next-line no-use-before-define
       if (!navbarRef.current.contains(event.target)) {
         setActive(false);
       }

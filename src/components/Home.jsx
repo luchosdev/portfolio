@@ -17,9 +17,8 @@ function Home() {
       <div className="sm:pt-3 sm900:ml-3 lg:mx-0">
         <img
           src={Profile}
-          // style={{ width: '208px' }}
           className="mx-auto w-48 rounded-full xs2:w-32 sm:w-36 sm2:w-40 md:w-52 lg:w-60 xl:w-72"
-          alt="profile-photo"
+          alt="profile"
         />
         <h1 className="mt-2 font-poppins text-3xl font-semibold text-blue_1 md:text-4xl lg:mt-3">
           Social Media
@@ -71,7 +70,8 @@ function Home() {
             Luis Sequera
           </h1>
           <p className="font-poppins xs2:text-sm min-[580px]:text-base sm:mt-4 sm:text-xl sm2:text-[1.4rem] md:text-2xl lg:text-3xl">
-            Front-End Developer. Musician. <br />
+            Front-End Developer. Musician.
+            <br />
             Passionate about learning.
           </p>
         </div>

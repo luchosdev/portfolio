@@ -11,6 +11,39 @@
   animation: float 3.5s ease-in-out infinite;
 }
 
+/* Para las funciones de "leer más" */
+.more {
+  cursor: pointer;
+  background-color: #ccf;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.4rem;
+}
+
+.complete {
+  display: none;
+}
+
+input.showmore {
+  display: none;
+}
+
+input.showmore ~ label.more span.menos {
+  display: none;
+}
+
+input.showmore:checked + .complete {
+  display: block;
+}
+
+input.showmore:checked ~ label.more span.mas {
+  display: none;
+}
+
+input.showmore:checked ~ label.more span.menos {
+  display: inline;
+}
+/* Hasta aquí llegan las funciones de "leer más" */
+
 @keyframes float {
   0%,
   100% {

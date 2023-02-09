@@ -24,10 +24,10 @@ function NavBar({ active, setActive, navbarRef }) {
   };
 
   return (
-    <div className="flex justify-center">
+    <div className="group flex justify-center">
       <nav
         ref={navbarRef}
-        className={`fixed flex w-screen items-center justify-between py-2 px-4 hover:bg-white hover:text-black dark:bg-gray-800 dark:text-white lg:top-0 lg:bg-white lg:py-0 lg:px-8 lg:font-medium lg:text-black lg:shadow-none ${
+        className={`fixed flex w-screen items-center justify-between py-2 px-4 group-hover:bg-white group-hover:text-black lg:top-0 lg:bg-white lg:py-0 lg:px-8 lg:font-medium lg:text-black lg:shadow-none ${
           active && 'bg-white'
         } ${active && 'text-black'} transition-all duration-500`}
         style={{ backdropFilter: 'blur(1px)', zIndex: '999' }}
@@ -111,7 +111,7 @@ function NavBar({ active, setActive, navbarRef }) {
           onClick={setActiveAndIcon}
         >
           {icon === 'menu' ? (
-            <HiMenu className="text-3xl" />
+            <HiMenu className="text-3xl text-white group-hover:text-black" />
           ) : (
             <HiMenuAlt3 className="text-2xl" />
           )}

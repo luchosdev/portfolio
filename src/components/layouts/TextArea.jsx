@@ -1,3 +1,7 @@
+/* eslint-disable arrow-body-style */
+/* eslint-disable object-curly-newline */
+/* eslint-disable react/prop-types */
+/* eslint-disable react/function-component-definition */
 import React from 'react';
 
 const TextArea = ({ placeholder, onChange, Style, name }) => {

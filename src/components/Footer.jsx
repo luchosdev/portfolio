@@ -14,9 +14,21 @@ function Footer() {
             <p className="xs2:text-lg md:text-xl lg:text-2xl">
               Página web creada con:
             </p>
-            <img className="h-4 w-4 md:h-6 md:w-6" src={ReactLogo} />
-            <img className="h-4 w-4 md:h-6 md:w-6" src={TailwindLogo} />
-            <img className="h-4 w-4 md:h-6 md:w-6" src={ViteLogo} />
+            <img
+              alt="logoReact"
+              className="h-4 w-4 md:h-6 md:w-6"
+              src={ReactLogo}
+            />
+            <img
+              alt="logoTailwind"
+              className="h-4 w-4 md:h-6 md:w-6"
+              src={TailwindLogo}
+            />
+            <img
+              alt="logoVite"
+              className="h-4 w-4 md:h-6 md:w-6"
+              src={ViteLogo}
+            />
           </div>
           <div className="flex items-center">
             <MdCopyright />

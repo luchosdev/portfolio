@@ -21,13 +21,13 @@ function Contact() {
   });
 
   const sendEmail = (e) => {
-    console.log('It works!');
     e.preventDefault();
 
     emailjs.sendForm(
       'service_b4osqgx',
       'template_gpgd708',
       form.current,
+      // eslint-disable-next-line comma-dangle
       'm-DaCE_jupVlbAhfw'
     );
 
@@ -49,7 +49,8 @@ function Contact() {
           Contact
         </h2>
         <p className="sm2:px-30 mx-3 mt-2 font-poppins xs2:mt-0 xs2:px-10 md:text-2xl lg:mb-3">
-          If you wan't to hire me, work with me or you just got some questions
+          If you wan&apos;t to hire me, work with me or you just got some
+          questions
           <strong className="ml-2">write me!</strong>
         </p>
 
