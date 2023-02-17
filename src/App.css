@@ -44,6 +44,25 @@ input.showmore:checked ~ label.more span.menos {
 }
 /* Hasta aquí llegan las funciones de "leer más" */
 
+/* Para cuando logre integrar esta clase al darkMode
+/* .dark {
+  background-image: linear-gradient(
+    to right,
+    #000318,
+    #030416,
+    #050513,
+    #070611,
+    #08070e,
+    #08070e,
+    #09070d,
+    #09070d,
+    #0a060f,
+    #0c0410,
+    #0e0311,
+    #100112
+  );
+} */
+
 @keyframes float {
   0%,
   100% {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 //* ICONOS
 import { HiMenuAlt3, HiMenu } from 'react-icons/hi';
@@ -23,24 +23,54 @@ function NavBar({ active, setActive, navbarRef }) {
     }, 1000);
   };
 
+  //!---------------------------------------
+  // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+  if (
+    localStorage.theme === 'dark' ||
+    (!('theme' in localStorage) &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches)
+  ) {
+    document.documentElement.classList.add('dark');
+  } else {
+    document.documentElement.classList.remove('dark');
+  }
+  // const toggleDarkMode = ref(document.documentElement.className === "dark");
+  const toggleDarkMode = useRef(
+    document.documentElement.className.includes('dark')
+  );
+  const changeDarkMode = () => {
+    toggleDarkMode.value = document.documentElement.classList.toggle('dark');
+    toggleDarkMode.value
+      ? (localStorage.theme = 'dark')
+      : (localStorage.theme = 'light');
+  };
+
   return (
     <div className="group flex justify-center">
       <nav
         ref={navbarRef}
-        className={`fixed flex w-screen items-center justify-between py-2 px-4 group-hover:bg-white group-hover:text-black lg:top-0 lg:bg-white lg:py-0 lg:px-8 lg:font-medium lg:text-black lg:shadow-none ${
-          active && 'bg-white'
+        className={`fixed flex w-screen items-center justify-between py-2 px-4 group-hover:bg-white group-hover:text-black dark:group-hover:bg-gray-300 lg:top-0 lg:bg-white lg:py-0 lg:px-8 lg:font-medium lg:text-black lg:shadow-none dark:lg:bg-gray-300 ${
+          active && 'bg-white dark:bg-gray-300'
         } ${active && 'text-black'} transition-all duration-500`}
         style={{ backdropFilter: 'blur(1px)', zIndex: '999' }}
       >
         {/* //* ICONOS DARK MODE */}
-        <BsFillSunFill className="text-2xl opacity-0 md:my-1" alt="dark-mode" />
-        <BsFillMoonStarsFill className="hidden" alt="dark-mode" />
+        <BsFillSunFill
+          onClick={changeDarkMode}
+          className="hidden text-2xl dark:block md:my-1"
+          alt="dark-mode"
+        />
+        <BsFillMoonStarsFill
+          onClick={changeDarkMode}
+          className="text-2xl dark:hidden"
+          alt="dark-mode"
+        />
 
         {/* //* LINKS */}
         <ul
           className={`absolute flex flex-col items-center p-3 transition-all duration-300 ease-in lg:relative lg:top-auto lg:ml-32 lg:flex-row lg:transition-none ${
             active ? 'top-[50px]' : 'top-[-490px]'
-          } mx-0 gap-6 bg-white lg:bg-transparent`}
+          } mx-0 gap-6 bg-white dark:bg-gray-300 lg:bg-transparent`}
         >
           <li>
             <a
@@ -83,7 +113,7 @@ function NavBar({ active, setActive, navbarRef }) {
               onClick={Loader}
               href={CV}
               target="_blank"
-              className="cursor-pointer select-none rounded-md bg-violet-600 px-6 py-2 text-lg text-white shadow-lg hover:bg-violet-700 hover:shadow-none hover:shadow-gray-800 active:bg-violet-600 lg:hidden"
+              className="cursor-pointer select-none rounded-md bg-violet-600 px-6 py-2 text-lg text-white shadow-lg hover:bg-violet-700 hover:shadow-none hover:shadow-gray-800 active:bg-violet-600 dark:bg-violet-900 dark:text-gray-200 lg:hidden"
               download
               rel="noreferrer"
             >

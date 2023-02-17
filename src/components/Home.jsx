@@ -11,7 +11,7 @@ function Home() {
   return (
     <section
       id="home"
-      className="mb-16 pt-28 xs:mb-10 xs:pt-12 xs2:mx-2 xs2:flex xs2:justify-around xs2:pt-8 sm:pt-10 lg:pt-20 xl:justify-center xl:gap-x-20"
+      className="mb-16 pt-28 dark:opacity-70 xs:mb-10 xs:pt-12 xs2:mx-2 xs2:flex xs2:justify-around xs2:pt-8 sm:pt-10 lg:pt-20 xl:justify-center xl:gap-x-20"
     >
       {/* //* Lado superior (mobile); Lado derecho (desktop) */}
       <div className="sm:pt-3 sm900:ml-3 lg:mx-0">
@@ -69,7 +69,7 @@ function Home() {
           <h1 className="mb-6 mt-4 font-poppins text-[42px] font-extrabold text-blue_1 xs2:mb-2 xs2:mt-2 xs2:text-3xl min-[550px]:text-4xl min-[580px]:text-[2.7rem] sm:text-5xl sm2:text-[3.5rem] md:mt-4 md:text-6xl sm900:mt-10 lg:text-7xl">
             Luis Sequera
           </h1>
-          <p className="font-poppins xs2:text-sm min-[580px]:text-base sm:mt-4 sm:text-xl sm2:text-[1.4rem] md:text-2xl lg:text-3xl">
+          <p className="dark:text font-poppins text-white xs2:text-sm min-[580px]:text-base sm:mt-4 sm:text-xl sm2:text-[1.4rem] md:text-2xl lg:text-3xl">
             Front-End Developer. Musician.
             <br />
             Passionate about learning.

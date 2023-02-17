@@ -8,15 +8,15 @@ function About() {
       className="py-20 xs:py-12 xs2:py-10 md:mx-3 md:flex md:items-center lg:mx-10 lg:pt-20"
     >
       <img
-        className="mx-auto w-96 rounded-md opacity-80 md:h-60 md:w-80 sm900:ml-4 sm900:w-96 lg:h-80 lg:w-auto"
+        className="mx-auto w-96 rounded-md opacity-80 dark:opacity-80 md:h-60 md:w-80 sm900:ml-4 sm900:w-96 lg:h-80 lg:w-auto"
         src={Laptop}
         alt="laptop"
       />
       <div>
-        <h1 className="my-3 font-poppins text-3xl font-extrabold text-blue_1 md:my-0 md:text-[1.6rem] xl:text-4xl">
+        <h1 className="my-3 font-poppins text-3xl font-extrabold text-blue_1 dark:opacity-80 md:my-0 md:text-[1.6rem] xl:text-4xl">
           WHO AM I?
         </h1>
-        <p className="mx-4 text-justify font-poppins text-white sm900:mx-10 lg:text-xl xl:text-2xl">
+        <p className="mx-4 text-justify font-poppins text-white dark:opacity-80 sm900:mx-10 lg:text-xl xl:text-2xl">
           Hello! I am Luis Sequera Contreras. I am a self-taught front-end
           developer based in Lima - Peru, but my country of birth is Venezuela.
           Since I was a kid, I really like everything related to technology,

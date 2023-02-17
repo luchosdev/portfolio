@@ -1,3 +1,5 @@
+/* eslint-disable comma-dangle */
+/* eslint-disable operator-linebreak */
 //* LIBRERIAS
 import React, { useState, useEffect, useRef } from 'react';
 
@@ -38,18 +40,9 @@ function App() {
   const navbarRef = useRef(null);
   //! -----------------------------------
 
-  const changeDarkMode = () => {
-    document.documentElement.classList.toogle('dark');
-  };
-
   return (
-    <div className="App">
-      <NavBar
-        changeDarkMode={changeDarkMode}
-        active={active}
-        setActive={setActive}
-        navbarRef={navbarRef}
-      />
+    <div className="App dark:bg-black">
+      <NavBar active={active} setActive={setActive} navbarRef={navbarRef} />
       <Home />
       <About />
       <Skills />

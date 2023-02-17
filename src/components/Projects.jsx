@@ -12,13 +12,13 @@ import Intranet from '../assets/img/works/intranet.png';
 function Projects() {
   return (
     <section className="lg:mx-10" id="projects">
-      <h1 className="mb-3 pt-14 font-poppins text-3xl font-extrabold text-blue_1 xs2:pt-8 lg:pt-16 lg:text-5xl">
+      <h1 className="mb-3 pt-14 font-poppins text-3xl font-extrabold text-blue_1 dark:opacity-80 xs2:pt-8 lg:pt-16 lg:text-5xl">
         Projects
       </h1>
       <div className="sm800:grid sm800:grid-cols-2">
         {/* Portfolio */}
         <div
-          className="mx-4 mt-4 flex flex-col rounded-md border bg-white px-4 pb-4"
+          className="mx-4 mt-4 flex flex-col rounded-md border bg-white px-4 pb-4 dark:opacity-90"
           id="project-1"
         >
           <div>
@@ -89,7 +89,7 @@ function Projects() {
 
         {/* Intranet */}
         <div
-          className="mx-4 mt-4 flex flex-col rounded-md border bg-white px-4 pb-4"
+          className="mx-4 mt-4 flex flex-col rounded-md border bg-white px-4 pb-4 dark:opacity-90"
           id="project-1"
         >
           <div>
@@ -165,7 +165,7 @@ function Projects() {
 
         {/* Admin E-Commerce */}
         <div
-          className="mx-4 mt-4 flex flex-col rounded-md border bg-white px-4 pb-4"
+          className="mx-4 mt-4 flex flex-col rounded-md border bg-white px-4 pb-4 dark:opacity-90"
           id="project-3"
         >
           <div>
@@ -217,7 +217,7 @@ function Projects() {
 
         {/* Yard Sales E-Commerce */}
         <div
-          className="mx-4 mt-4 flex flex-col rounded-md border bg-white px-4 pb-4"
+          className="mx-4 mt-4 flex flex-col rounded-md border bg-white px-4 pb-4 dark:opacity-90"
           id="project-4"
         >
           <div>
@@ -228,8 +228,8 @@ function Projects() {
                 alt="yardsales"
               />
             </picture>
-            <h3 className="mb-2 mt-4 font-poppins text-2xl font-bold text-orange_1">
-              Yard Sales E-commerce
+            <h3 className="mb-2 mt-4 font-poppins text-[22px] font-bold text-orange_1 sm:text-2xl">
+              Yard Sales E-Commerce
             </h3>
             <p className="mb-5 font-poppins text-xl text-black lg:mx-2">
               <b>Technologies: </b>
@@ -272,7 +272,7 @@ function Projects() {
 
         {/* Google Clone */}
         <div
-          className="mx-4 mt-4 flex flex-col rounded-md border bg-white px-4 pb-4"
+          className="mx-4 mt-4 flex flex-col rounded-md border bg-white px-4 pb-4 dark:opacity-90"
           id="project-5"
         >
           <div>
@@ -306,7 +306,7 @@ function Projects() {
 
         {/* Sign in Landing Page */}
         <div
-          className="mx-4 mt-4 flex flex-col rounded-md border bg-white px-4 pb-4"
+          className="mx-4 mt-4 flex flex-col rounded-md border bg-white px-4 pb-4 dark:opacity-90"
           id="project-6"
         >
           <div>

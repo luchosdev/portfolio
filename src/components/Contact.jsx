@@ -42,7 +42,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="mx-3 mb-20 pt-28 xs:pt-20 xs2:mb-0 xs2:pt-8 lg:pt-14"
+      className="mx-3 mb-20 pt-28 dark:opacity-80 xs:pt-20 xs2:mb-0 xs2:pt-8 lg:pt-14"
     >
       <div className="flex-col xs2:flex xs2:items-center">
         <h2 className="font-poppins text-3xl font-extrabold text-blue_1 lg:mb-5 lg:text-5xl">

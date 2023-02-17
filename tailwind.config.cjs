@@ -3,10 +3,13 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  darkMode: 'media',
+  darkMode: 'class',
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      backgroundColor: {
+        dark: 'linear-gradient(to right, #000318, #030416, #050513, #070611, #08070e, #08070e, #09070d, #09070d, #0a060f, #0c0410, #0e0311, #100112)',
+      },
       screens: {
         xs: '375px',
         xs2: '500px',
